@@ -33,9 +33,11 @@ SCREEN_SIZE = ([SCREEN_WIDTH, SCREEN_HEIGHT])
     
 
 # game elements:
-PLAYER_HEIGHT = 200 #these need to be based on bitmapped image size
+#these are based on bitmapped image size
+#they should be updated if images are changed
+PLAYER_HEIGHT = 200 
 PLAYER_WIDTH = 50
-PLAYER_SPEED = 10
+PLAYER_SPEED = 15
 
 PUCK_HEIGHT = 30
 PUCK_WIDTH = 30

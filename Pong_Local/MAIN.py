@@ -60,11 +60,10 @@ while not done:
             elif event.key == pygame.K_s:
                 player_2.changespeed(PLAYER_SPEED)
                 
-            #FOR DEV ONLY:
+            #(resets puck):
             elif event.key == pygame.K_F2:
                 puck.remove()
                 all_sprites_list.remove(puck)
-                
                 puck = Puck()
                 
                 
@@ -111,4 +110,3 @@ while not done:
     
 #closes game:
 pygame.quit()
-
