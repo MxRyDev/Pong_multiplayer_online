@@ -1,8 +1,8 @@
-# Defines the player class to be imported into localpong_main
+# Defines the puck class to be imported into pong/MAIN
 
 if __name__ == '__main__':
     print('''
-    This file is used to define the PLAYER class for Local Pong.
+    This file is used to define the PUCK class for Local Pong.
     it is to be used within "localpong_main.py".
     on its own, it provides no functionality.
     
@@ -10,41 +10,46 @@ if __name__ == '__main__':
     ''')
     
 import pygame.sprite
+from random import randint, choice
 from constants import *
 
 
-
-# PLAYER CLASS
-class Player(pygame.sprite.Sprite):
     
-    def __init__(self, startx, image):
+# PUCK CLASS
+class Puck(pygame.sprite.Sprite):
+    def __init__(self):
         # init position variables
-        self.change_x = 0
-        self.change_y = 0
+        self.choices = [PUCK_SPEED, -1*PUCK_SPEED]
+        self.change_x = choice(self.choices)
+        self.change_y = randint(-1*PUCK_SPEED, PUCK_SPEED)
         # inherited class init
         pygame.sprite.Sprite.__init__(self)
         
-        # setup image
-        self.image = image
+        #setup image
+        self.image = puck_image
         self.rect = self.image.get_rect()
-        self.rect.x = startx
-        self.rect.y = (SCREEN_HEIGHT/2 - PLAYER_HEIGHT/2)
+        self.rect.x = (SCREEN_WIDTH/2 - PUCK_WIDTH/2)
+        self.rect.y = (SCREEN_HEIGHT/2 - PUCK_HEIGHT/2)
         
         # add to lists
         all_sprites_list.add(self)
-        player_list.add(self)
+        puck_list.add(self)
         
     # Define movement methods:
-    def changespeed(self, y):
+    def changespeed(self, x, y):
+        self.change_x += x
         self.change_y += y
-        
+    
     def move(self):
         
         # move
+        self.rect.x += self.change_x
         self.rect.y += self.change_y
         
-        # keep on screen:
+        # bounce off of top/bottom of screen
         if self.rect.bottom > SCREEN_HEIGHT:
-            self.rect.bottom = SCREEN_HEIGHT
-        if self.rect.top < 0:
-            self.rect.top = 0
+            self.change_y *= -1
+        elif self.rect.top < 0:
+            self.change_y *= -1
+        
+           
