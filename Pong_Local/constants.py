@@ -33,17 +33,17 @@ SCREEN_SIZE = ([SCREEN_WIDTH, SCREEN_HEIGHT])
     
 
 # game elements:
-#these are based on bitmapped image size
-#they should be updated if images are changed
+# these are based on bitmapped image size
+# they should be updated if images are changed
 PLAYER_HEIGHT = 200 
 PLAYER_WIDTH = 50
 PLAYER_SPEED = 15
 
 PUCK_HEIGHT = 30
 PUCK_WIDTH = 30
-PUCK_SPEED = 7    
-
-
+PUCK_SPEED = 7
+                   
+                       
 
 # --- import files ---
 
