@@ -17,10 +17,13 @@ from constants import *
 # PLAYER CLASS
 class Player(pygame.sprite.Sprite):
     
-    def __init__(self, startx, image):
+    def __init__(self, startx, image, player_speed = PLAYER_SPEED):
+        
         # init position variables
         self.change_x = 0
         self.change_y = 0
+        self.speed = PLAYER_SPEED
+        
         # inherited class init
         pygame.sprite.Sprite.__init__(self)
         
@@ -35,6 +38,12 @@ class Player(pygame.sprite.Sprite):
         player_list.add(self)
         
     # Define movement methods:
+    def move_up(self):
+        self.changespeed(-self.speed)
+        
+    def move_down(self):
+        self.changespeed(self.speed)
+    
     def changespeed(self, y):
         self.change_y += y
         

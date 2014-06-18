@@ -1,10 +1,17 @@
+# Need to add:
+'''
+-Hit Detection
+-Scoring
+-"Spin" on the ball if paddle was moving at impact
+'''
+
 
 # Import 3rd party Libraries:
 import pygame
 from pygame.locals import *
 import random, sys
 
-# import custom libries
+# Import custom libraries:
 from constants import *
 from player_class import *
 from puck_class import *
@@ -24,49 +31,34 @@ player_2 = Player(50, player1_image)
 puck = Puck()
 
 # ---create event exe's---
-actions_list = []
 
-p1_move_up = Event_exe(pygame.K_UP, 
-                       player_1.changespeed(PLAYER_SPEED), 
-                       player_1.changespeed(-PLAYER_SPEED),
-                       actions_list
-                       )
+# create list that all actions will be added to
+al = []   # this will let the Event_conductor iterate through the actions
 
-p1_move_down = Event_exe(pygame.K_DOWN, 
-                         player_1.changespeed(-PLAYER_SPEED),
-                         player_1.changespeed(PLAYER_SPEED),
-                         actions_list
-                         )
 
-p2_move_up = Event_exe(pygame.K_w,
-                       player_2.changespeed(PLAYER_SPEED),
-                       player_2.changespeed(-PLAYER_SPEED),
-                       actions_list
-                       )
-
-p2_move_down =  Event_exe(pygame.K_s,
-                          player_2.changespeed(-PLAYER_SPEED),
-                          player_2.changespeed(PLAYER_SPEED),
-                          actions_list
-                          )
+# creates actions. passed arguments are:
+# KEY, method/function for keyup, method/function for keydown, actions list
+p1_up       = Event_exe(K_UP, player_1.move_up, player_1.move_down, al)
+p1_down     = Event_exe(K_DOWN, player_1.move_down, player_1.move_up, al)
+p2_up       = Event_exe(K_w, player_2.move_up, player_2.move_down, al)
+p2_down     = Event_exe(K_s, player_2.move_down, player_2.move_up, al)
+puck_reset  = Event_exe(K_F2, puck.reset, ignore, al)
 
 # create event conductor object, pass it the list of actions we want:
-event_conductor = Event_conductor(actions_list)
-print(actions_list)
+event_conductor = Event_conductor(al)
 
 
 
 #`````````````````````````````````````````````````````````````````````````````````#
 # _________________________----- Main Loop -----_________________________________ #
-
 done = False
 
 # --- event handling ---
 while not done:
     
+    # --- handle events ---
     event_conductor.handle_events(pygame.event.get())
     
-
 
     # --- move objects ---
     for object in all_sprites_list:
@@ -79,7 +71,7 @@ while not done:
     # blits bg image:
     screen.blit(background_image, background_position)
     
-    
+    # updates/draws sprites
     all_sprites_list.update()
     all_sprites_list.draw(screen)
     
