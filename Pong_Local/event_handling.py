@@ -39,11 +39,11 @@ class Event_exe():
         actions_list.append(self)
     
     def pressed(self):
-        self.press_action
-        print('pressed')
+        self.press_action()
+        
     def released(self):
-        self.release_action
-        print('released')
+        self.release_action()
+        
     
     
 class Event_conductor():
@@ -55,14 +55,21 @@ class Event_conductor():
             for action in self.actions_list:
                 # if the event is keyup or keydown...
                 if event.type in [pygame.KEYDOWN, pygame.KEYUP]:
-                    print('we have a key press')
                     # and if it is a keypress we are looking for...
                     if event.key == action.event:
-                        print('we have a keypress we were looking for')
                         if event.type == pygame.KEYDOWN:
-                            print('triggering...')
                             action.pressed()
+                            
                         elif event.type == pygame.KEYUP:
-                            print('triggering')
                             action.released()
+                            
                                 
+                                
+# TO ADD:
+'''
+-add support for non-event key down/up events, so things like
+Pygame.QUIT work.
+
+-find ways to reduce end-user typing.
+    (such as not having to specifiy "actions_list" for each object)
+'''

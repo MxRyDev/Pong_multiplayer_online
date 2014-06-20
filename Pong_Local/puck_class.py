@@ -51,5 +51,14 @@ class Puck(pygame.sprite.Sprite):
             self.change_y *= -1
         elif self.rect.top < 0:
             self.change_y *= -1
-        
-           
+            
+        # reset when travels off screen on x axis
+        # (update this when scoring & better reset are implemented)
+        if self.rect.x <-600 or self.rect.x>(SCREEN_WIDTH+600):
+            self.reset()
+    
+    def reset(self):
+        self.rect.x = (SCREEN_WIDTH/2 - PUCK_WIDTH/2)
+        self.rect.y = (SCREEN_HEIGHT/2 - PUCK_HEIGHT/2)
+        self.change_x = choice(self.choices)
+        self.change_y = randint(-1*PUCK_SPEED, PUCK_SPEED)
