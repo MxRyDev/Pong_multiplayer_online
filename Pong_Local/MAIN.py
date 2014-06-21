@@ -3,7 +3,9 @@
 -Hit Detection
 -Scoring
 -"Spin" on the ball if paddle was moving at impact
+
 '''
+
 
 
 # Import 3rd party Libraries:
@@ -58,12 +60,12 @@ while not done:
     
     # --- handle events ---
     event_conductor.handle_events(pygame.event.get())
-    
 
     # --- move objects ---
-    for object in all_sprites_list:
-        object.move()
+    puck.move(p_list)
     
+    for player in player_list:
+        player.move()
     
     
     # --- draw objects ---
@@ -81,6 +83,7 @@ while not done:
 
     # limits framerate:
     clock.tick(60)
+    
     
 #closes game:
 pygame.quit()
