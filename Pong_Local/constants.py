@@ -15,6 +15,7 @@ screen = pygame.display.set_mode([10,10])
 # lists:
 all_sprites_list = pygame.sprite.Group()
 player_list      = pygame.sprite.Group()
+p_list = []
 puck_list        = pygame.sprite.Group()
 
 # colors:

@@ -52,6 +52,14 @@ class Puck(pygame.sprite.Sprite):
             
         puck_hit_player = pygame.sprite.spritecollide(self, player_list, False)
         for puck in puck_hit_player:
+            #HEY ROYCE:
+            ''' 
+            here you only tell the puck what to do
+            if it hits a player AND is going left.
+            
+            Thats why it only seems like hits are registering
+            for one player.
+            '''
             if self.change_x < 0:
                 self.change_x *= -1
         
