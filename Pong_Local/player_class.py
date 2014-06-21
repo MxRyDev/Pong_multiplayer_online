@@ -36,7 +36,6 @@ class Player(pygame.sprite.Sprite):
         # add to lists
         all_sprites_list.add(self)
         player_list.add(self)
-        p_list.append(self)
         
     # Define movement methods:
     def move_up(self):
