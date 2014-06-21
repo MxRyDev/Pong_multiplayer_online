@@ -41,7 +41,11 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                  'full-screen': False,
                  'notebook_display': 'normal',
 <<<<<<< HEAD
+<<<<<<< HEAD
                  'notebook_percent': 0.11648745519713266,
+=======
+                 'notebook_percent': 0.18758716875871684,
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                  'notebook_percent': 0.18758716875871684,
 >>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
@@ -54,8 +58,12 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
         'tree-states': {'deep': {'expanded-nodes': [(1,),
         (3,)],
 <<<<<<< HEAD
+<<<<<<< HEAD
                                  'selected-nodes': [(3,
         6)],
+=======
+                                 'selected-nodes': [],
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                                  'selected-nodes': [],
 >>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
@@ -155,8 +163,13 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402775815.665],
                           (loc('max_local_attempt/localpong_main.py'),
+=======
+                           1402807889.532],
+                          [loc('max_local_attempt/localpong_CLASSplayer.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402807889.532],
                           [loc('max_local_attempt/localpong_CLASSplayer.py'),
@@ -169,8 +182,13 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402807852.558),
                           [loc('max_local_attempt/localpong_main.py'),
+=======
+                           1402807889.535],
+                          [loc('max_local_attempt/localpong_CLASSplayer.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402807889.535],
                           [loc('max_local_attempt/localpong_CLASSplayer.py'),
@@ -183,7 +201,11 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402807854.343],
+=======
+                           1402807963.609],
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402807963.609],
 >>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
@@ -196,8 +218,13 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402807889.532],
                           [loc('max_local_attempt/localpong_CLASSplayer.py'),
+=======
+                           1402807965.741],
+                          (loc('max_local_attempt/MAIN.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402807965.741],
                           (loc('max_local_attempt/MAIN.py'),
@@ -210,8 +237,13 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402807889.535],
                           [loc('max_local_attempt/localpong_CLASSplayer.py'),
+=======
+                           1402808204.752),
+                          (loc('max_local_attempt/MAIN.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402808204.752),
                           (loc('max_local_attempt/MAIN.py'),
@@ -224,8 +256,13 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402807963.609],
                           [loc('max_local_attempt/localpong_main.py'),
+=======
+                           1402808217.02),
+                          [loc('max_local_attempt/MAIN.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402808217.02),
                           [loc('max_local_attempt/MAIN.py'),
@@ -238,8 +275,13 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402807965.741],
                           (loc('max_local_attempt/MAIN.py'),
+=======
+                           1402808234.028],
+                          [loc('Pong_Local/MAIN.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402808234.028],
                           [loc('Pong_Local/MAIN.py'),
@@ -252,8 +294,13 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402808204.752),
                           (loc('max_local_attempt/MAIN.py'),
+=======
+                           1402809877.263],
+                          [loc('Pong_Local/constants.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402809877.263],
                           [loc('Pong_Local/constants.py'),
@@ -266,8 +313,13 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402808217.02),
                           [loc('max_local_attempt/MAIN.py'),
+=======
+                           1402809879.303],
+                          [loc('Pong_Local/constants.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402809879.303],
                           [loc('Pong_Local/constants.py'),
@@ -280,7 +332,11 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402808234.028],
+=======
+                           1402810738.503],
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402810738.503],
 >>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
@@ -293,8 +349,13 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402809877.263],
                           [loc('Pong_Local/constants.py'),
+=======
+                           1402810738.506],
+                          [loc('Pong_Local/MAIN.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402810738.506],
                           [loc('Pong_Local/MAIN.py'),
@@ -307,8 +368,13 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402809879.303],
                           [loc('Pong_Local/constants.py'),
+=======
+                           1402810738.814],
+                          [loc('Pong_Local/puck_class.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402810738.814],
                           [loc('Pong_Local/puck_class.py'),
@@ -321,7 +387,31 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
+<<<<<<< HEAD
                            1402810738.503],
+=======
+                           1402810738.817],
+                          [loc('Pong_Local/puck_class.py'),
+                           {'attrib-starts': [],
+                            'first-line': 0,
+                            'folded-linenos': [],
+                            'sel-line': 0,
+                            'sel-line-start': 0,
+                            'selection_end': 0,
+                            'selection_start': 0},
+                           1402810740.04],
+                          [loc('Pong_Local/player_class.py'),
+                           {'attrib-starts': [],
+                            'first-line': 0,
+                            'folded-linenos': [],
+                            'sel-line': 0,
+                            'sel-line-start': 0,
+                            'selection_end': 0,
+                            'selection_start': 0},
+                           1402810740.043],
+                          [loc('Pong_Local/player_class.py'),
+                           {'attrib-starts': [],
+                            'first-line': 0,
 =======
                            1402810738.817],
                           [loc('Pong_Local/puck_class.py'),
@@ -351,17 +441,18 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
                            1402810740.159],
->>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                           [loc('Pong_Local/MAIN.py'),
                            {'attrib-starts': [],
                             'first-line': 0,
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                             'folded-linenos': [],
                             'sel-line': 0,
                             'sel-line-start': 0,
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
-                           1402810738.506],
+                           1402810740.159],
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            1402810742.096],
 >>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
@@ -374,11 +465,16 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_end': 0,
                             'selection_start': 0},
 <<<<<<< HEAD
-                           1402810738.814],
+<<<<<<< HEAD
+                           1402810738.506],
+=======
+                           1402810742.096],
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
+                          [loc('Pong_Local/MAIN.py'),
 =======
                            1403079058.604],
->>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                           [loc('Pong_Local/puck_class.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                            {'attrib-starts': [],
                             'first-line': 0,
                             'folded-linenos': [],
@@ -386,6 +482,25 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'sel-line-start': 0,
                             'selection_end': 0,
                             'selection_start': 0},
+<<<<<<< HEAD
+<<<<<<< HEAD
+                           1402810738.814],
+=======
+                           1403079058.604],
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
+                          [loc('Pong_Local/puck_class.py'),
+=======
+                           1403079058.615],
+                          [loc('Pong_Local/event_handling.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
+                           {'attrib-starts': [],
+                            'first-line': 0,
+                            'folded-linenos': [],
+                            'sel-line': 0,
+                            'sel-line-start': 0,
+                            'selection_end': 0,
+                            'selection_start': 0},
+<<<<<<< HEAD
 <<<<<<< HEAD
                            1402810738.817],
                           [loc('Pong_Local/puck_class.py'),
@@ -478,15 +593,39 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                                  (loc('Pong_Local/player_class.py'),
                                   {}),
                                  (loc('Pong_Local/puck_class.py'),
+=======
+                           1403079062.763]],
+                         19),
+           'current-loc': loc('Pong_Local/event_handling.py'),
+           'editor-state-list': [(loc('Pong_Local/constants.py'),
+                                  {}),
+                                 (loc('Pong_Local/event_handling.py'),
+                                  {'attrib-starts': [],
+                                   'first-line': 0,
+                                   'folded-linenos': [],
+                                   'sel-line': 0,
+                                   'sel-line-start': 0,
+                                   'selection_end': 0,
+                                   'selection_start': 0}),
+                                 (loc('Pong_Local/MAIN.py'),
+                                  {}),
+                                 (loc('Pong_Local/player_class.py'),
+                                  {}),
+                                 (loc('Pong_Local/puck_class.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                                   {})],
            'has-focus': False,
            'locked': False},
           [loc('Pong_Local/constants.py'),
+<<<<<<< HEAD
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
+=======
 >>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
            loc('Pong_Local/event_handling.py'),
            loc('Pong_Local/MAIN.py'),
            loc('Pong_Local/player_class.py'),
            loc('Pong_Local/puck_class.py')]),
+<<<<<<< HEAD
 <<<<<<< HEAD
          ({'bookmarks': ([(loc('Pong_Local/class_test.py'),
                            {'attrib-starts': [('Test',
@@ -660,12 +799,60 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                            {'attrib-starts': [],
                             'first-line': 9,
                             'folded-linenos': [],
+=======
+         ({'bookmarks': ([[loc('Pong_Local/puck_class.py'),
+                           {'attrib-starts': [],
+                            'first-line': 9,
+                            'folded-linenos': [],
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                             'sel-line': 0,
                             'sel-line-start': 0,
                             'selection_end': 18,
                             'selection_start': 18},
+<<<<<<< HEAD
                            1403052434.158),
                           (loc('Pong_Local/MAIN.py'),
+=======
+                           1403079058.56],
+                          [loc('Pong_Local/event_handling.py'),
+                           {'attrib-starts': [('ignore',
+        17)],
+                            'first-line': 14,
+                            'folded-linenos': [],
+                            'sel-line': 20,
+                            'sel-line-start': 383,
+                            'selection_end': 383,
+                            'selection_start': 383},
+                           1403079058.571],
+                          [loc('Pong_Local/constants.py'),
+                           {'attrib-starts': [],
+                            'first-line': 33,
+                            'folded-linenos': [],
+                            'sel-line': 65,
+                            'sel-line-start': 1513,
+                            'selection_end': 1513,
+                            'selection_start': 1513},
+                           1403079058.581],
+                          (loc('Pong_Local/event_handling.py'),
+                           {'attrib-starts': [],
+                            'first-line': 0,
+                            'folded-linenos': [],
+                            'sel-line': 0,
+                            'sel-line-start': 0,
+                            'selection_end': 0,
+                            'selection_start': 0},
+                           1403079062.66),
+                          [loc('Pong_Local/class_test.py'),
+                           {'attrib-starts': [],
+                            'first-line': 0,
+                            'folded-linenos': [],
+                            'sel-line': 0,
+                            'sel-line-start': 0,
+                            'selection_end': 0,
+                            'selection_start': 0},
+                           1403079064.89],
+                          [loc('Pong_Local/class_test.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                            {'attrib-starts': [],
                             'first-line': 48,
                             'folded-linenos': [],
@@ -739,6 +926,18 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'sel-line-start': 0,
                             'selection_end': 0,
                             'selection_start': 0},
+<<<<<<< HEAD
+=======
+                           1403079066.738],
+                          (loc('Pong_Local/event_handling.py'),
+                           {'attrib-starts': [],
+                            'first-line': 0,
+                            'folded-linenos': [],
+                            'sel-line': 0,
+                            'sel-line-start': 0,
+                            'selection_end': 0,
+                            'selection_start': 0},
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                            1403079066.745),
                           (loc('Pong_Local/constants.py'),
                            {'attrib-starts': [],
@@ -768,6 +967,7 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_start': 0},
                            1403079071.553),
                           (loc('Pong_Local/player_class.py'),
+<<<<<<< HEAD
                            {'attrib-starts': [],
                             'first-line': 0,
                             'folded-linenos': [],
@@ -788,11 +988,16 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                           (loc('Pong_Local/MAIN.py'),
                            {'attrib-starts': [],
                             'first-line': 31,
+=======
+                           {'attrib-starts': [],
+                            'first-line': 0,
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                             'folded-linenos': [],
                             'sel-line': 0,
                             'sel-line-start': 0,
                             'selection_end': 0,
                             'selection_start': 0},
+<<<<<<< HEAD
                            1403079148.471),
                           (loc('Pong_Local/player_class.py'),
                            {'attrib-starts': [],
@@ -805,6 +1010,10 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                            1403079354.96),
                           (loc('Pong_Local/constants.py'),
 >>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
+=======
+                           1403079072.648),
+                          (loc('Pong_Local/puck_class.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                            {'attrib-starts': [],
                             'first-line': 0,
                             'folded-linenos': [],
@@ -812,6 +1021,7 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'sel-line-start': 0,
                             'selection_end': 0,
                             'selection_start': 0},
+<<<<<<< HEAD
 <<<<<<< HEAD
                            1403052639.932),
                           (loc('Pong_Local/MAIN.py'),
@@ -824,6 +1034,19 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_start': 2020},
                            1403052640.724),
                           [loc('Pong_Local/player_class.py'),
+=======
+                           1403079073.625),
+                          (loc('Pong_Local/MAIN.py'),
+                           {'attrib-starts': [],
+                            'first-line': 31,
+                            'folded-linenos': [],
+                            'sel-line': 0,
+                            'sel-line-start': 0,
+                            'selection_end': 0,
+                            'selection_start': 0},
+                           1403079148.471),
+                          (loc('Pong_Local/player_class.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                            {'attrib-starts': [],
                             'first-line': 0,
                             'folded-linenos': [],
@@ -831,6 +1054,7 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'sel-line-start': 0,
                             'selection_end': 0,
                             'selection_start': 0},
+<<<<<<< HEAD
                            1403052843.282]],
                          19),
            'current-loc': loc('Pong_Local/player_class.py'),
@@ -913,6 +1137,19 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'selection_start': 665},
                            1403079403.738),
                           [loc('Pong_Local/class_test.py'),
+=======
+                           1403079354.96),
+                          (loc('Pong_Local/constants.py'),
+                           {'attrib-starts': [],
+                            'first-line': 0,
+                            'folded-linenos': [],
+                            'sel-line': 0,
+                            'sel-line-start': 0,
+                            'selection_end': 0,
+                            'selection_start': 0},
+                           1403079356.428),
+                          (loc('Pong_Local/class_test.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                            {'attrib-starts': [],
                             'first-line': 0,
                             'folded-linenos': [],
@@ -920,6 +1157,30 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                             'sel-line-start': 336,
                             'selection_end': 336,
                             'selection_start': 336},
+<<<<<<< HEAD
+=======
+                           1403079362.094),
+                          (loc('Pong_Local/event_handling.py'),
+                           {'attrib-starts': [('Event_exe',
+        33),
+        ('Event_exe.__init__',
+         34)],
+                            'first-line': 14,
+                            'folded-linenos': [],
+                            'sel-line': 34,
+                            'sel-line-start': 665,
+                            'selection_end': 665,
+                            'selection_start': 665},
+                           1403079403.738),
+                          [loc('Pong_Local/class_test.py'),
+                           {'attrib-starts': [],
+                            'first-line': 0,
+                            'folded-linenos': [],
+                            'sel-line': 22,
+                            'sel-line-start': 336,
+                            'selection_end': 336,
+                            'selection_start': 336},
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                            1403079418.878],
                           [loc('Pong_Local/class_test.py'),
                            {'attrib-starts': [('press_up',
@@ -991,11 +1252,15 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
            'has-focus': False,
            'locked': False},
           [loc('Pong_Local/constants.py'),
+<<<<<<< HEAD
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
+=======
 >>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
            loc('Pong_Local/event_handling.py'),
            loc('Pong_Local/MAIN.py'),
            loc('Pong_Local/player_class.py'),
            loc('Pong_Local/puck_class.py')])),
+<<<<<<< HEAD
 <<<<<<< HEAD
         ({'bookmarks': ([(loc('Pong_Local/MAIN.py'),
                           {'attrib-starts': [],
@@ -1144,10 +1409,127 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                            'selection_end': 1547,
                            'selection_start': 1547},
                           1403052197.113),
+=======
+        ({'bookmarks': ([(loc('Pong_Local/puck_class.py'),
+                          {'attrib-starts': [('Puck',
+        18),
+        ('Puck.move',
+         42)],
+                           'first-line': 35,
+                           'folded-linenos': [],
+                           'sel-line': 56,
+                           'sel-line-start': 1640,
+                           'selection_end': 1701,
+                           'selection_start': 1701},
+                          1403078887.939),
+                         (loc('Pong_Local/MAIN.py'),
+                          {'attrib-starts': [],
+                           'first-line': 41,
+                           'folded-linenos': [],
+                           'sel-line': 16,
+                           'sel-line-start': 310,
+                           'selection_end': 337,
+                           'selection_start': 337},
+                          1403078901.87),
+                         (loc('Pong_Local/puck_class.py'),
+                          {'attrib-starts': [('Puck',
+        18),
+        ('Puck.reset',
+         59)],
+                           'first-line': 0,
+                           'folded-linenos': [],
+                           'sel-line': 63,
+                           'sel-line-start': 1917,
+                           'selection_end': 1975,
+                           'selection_start': 1975},
+                          1403078919.965),
+                         [loc('Pong_Local/MAIN.py'),
+                          {'attrib-starts': [],
+                           'first-line': 41,
+                           'folded-linenos': [],
+                           'sel-line': 16,
+                           'sel-line-start': 310,
+                           'selection_end': 337,
+                           'selection_start': 337},
+                          1403079058.458],
+                         [loc('Pong_Local/player_class.py'),
+                          {'attrib-starts': [('Player',
+        17),
+        ('Player.move',
+         49)],
+                           'first-line': 24,
+                           'folded-linenos': [],
+                           'sel-line': 53,
+                           'sel-line-start': 1343,
+                           'selection_end': 1351,
+                           'selection_start': 1351},
+                          1403079058.478],
+                         [loc('Pong_Local/puck_class.py'),
+                          {'attrib-starts': [('Puck',
+        18),
+        ('Puck.reset',
+         59)],
+                           'first-line': 0,
+                           'folded-linenos': [],
+                           'sel-line': 63,
+                           'sel-line-start': 1917,
+                           'selection_end': 1975,
+                           'selection_start': 1975},
+                          1403079058.492],
+                         [loc('Pong_Local/event_handling.py'),
+                          {'attrib-starts': [('Event_conductor',
+        48),
+        ('Event_conductor.handle_events',
+         52)],
+                           'first-line': 30,
+                           'folded-linenos': [],
+                           'sel-line': 64,
+                           'sel-line-start': 1760,
+                           'selection_end': 1788,
+                           'selection_start': 1788},
+                          1403079058.505],
+                         [loc('Pong_Local/constants.py'),
+                          {'attrib-starts': [],
+                           'first-line': 46,
+                           'folded-linenos': [],
+                           'sel-line': 65,
+                           'sel-line-start': 1513,
+                           'selection_end': 1513,
+                           'selection_start': 1513},
+                          1403079058.515],
+                         (loc('Pong_Local/event_handling.py'),
+                          {'attrib-starts': [],
+                           'first-line': 10,
+                           'folded-linenos': [],
+                           'sel-line': 0,
+                           'sel-line-start': 0,
+                           'selection_end': 0,
+                           'selection_start': 0},
+                          1403079062.556),
+                         (loc('Pong_Local/MAIN.py'),
+                          {'attrib-starts': [],
+                           'first-line': 0,
+                           'folded-linenos': [],
+                           'sel-line': 0,
+                           'sel-line-start': 0,
+                           'selection_end': 0,
+                           'selection_start': 0},
+                          1403079080.866),
+                         (loc('Pong_Local/event_handling.py'),
+                          {'attrib-starts': [],
+                           'first-line': 0,
+                           'folded-linenos': [],
+                           'sel-line': 24,
+                           'sel-line-start': 461,
+                           'selection_end': 502,
+                           'selection_start': 502},
+                          1403079109.059),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                          (loc('Pong_Local/MAIN.py'),
                           {'attrib-starts': [],
                            'first-line': 42,
                            'folded-linenos': [],
+<<<<<<< HEAD
                            'sel-line': 52,
                            'sel-line-start': 1566,
                            'selection_end': 1599,
@@ -1337,11 +1719,73 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                          (loc('Pong_Local/MAIN.py'),
                           {'attrib-starts': [],
                            'first-line': 0,
+=======
+                           'sel-line': 7,
+                           'sel-line-start': 106,
+                           'selection_end': 106,
+                           'selection_start': 106},
+                          1403079271.469),
+                         (loc('Pong_Local/event_handling.py'),
+                          {'attrib-starts': [('Event_exe',
+        33),
+        ('Event_exe.__init__',
+         34)],
+                           'first-line': 11,
+                           'folded-linenos': [],
+                           'sel-line': 34,
+                           'sel-line-start': 665,
+                           'selection_end': 737,
+                           'selection_start': 737},
+                          1403079381.898),
+                         (loc('Pong_Local/MAIN.py'),
+                          {'attrib-starts': [],
+                           'first-line': 18,
+                           'folded-linenos': [],
+                           'sel-line': 44,
+                           'sel-line-start': 1145,
+                           'selection_end': 1192,
+                           'selection_start': 1192},
+                          1403079430.012),
+                         (loc('Pong_Local/MAIN.py'),
+                          {'attrib-starts': [],
+                           'first-line': 52,
+                           'folded-linenos': [],
+                           'sel-line': 81,
+                           'sel-line-start': 1973,
+                           'selection_end': 1983,
+                           'selection_start': 1983},
+                          1403079463.186),
+                         (loc('Pong_Local/constants.py'),
+                          {'attrib-starts': [],
+                           'first-line': 40,
+                           'folded-linenos': [],
+                           'sel-line': 64,
+                           'sel-line-start': 1481,
+                           'selection_end': 1511,
+                           'selection_start': 1511},
+                          1403079622.48),
+                         (loc('Pong_Local/event_handling.py'),
+                          {'attrib-starts': [('Event_exe',
+        33),
+        ('Event_exe.__init__',
+         34)],
+                           'first-line': 1,
+                           'folded-linenos': [],
+                           'sel-line': 34,
+                           'sel-line-start': 665,
+                           'selection_end': 737,
+                           'selection_start': 737},
+                          1403079629.14),
+                         (loc('Pong_Local/player_class.py'),
+                          {'attrib-starts': [],
+                           'first-line': 36,
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                            'folded-linenos': [],
                            'sel-line': 0,
                            'sel-line-start': 0,
                            'selection_end': 0,
                            'selection_start': 0},
+<<<<<<< HEAD
                           1403079080.866),
                          (loc('Pong_Local/event_handling.py'),
                           {'attrib-starts': [],
@@ -1420,6 +1864,8 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                            'sel-line-start': 0,
                            'selection_end': 0,
                            'selection_start': 0},
+=======
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                           1403079637.86),
                          (loc('Pong_Local/puck_class.py'),
                           {'attrib-starts': [('Puck',
@@ -1445,6 +1891,7 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                         19),
           'current-loc': loc('Pong_Local/MAIN.py'),
           'editor-state-list': [(loc('Pong_Local/constants.py'),
+<<<<<<< HEAD
 >>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                                  {'attrib-starts': [],
                                   'first-line': 36,
@@ -1497,9 +1944,33 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
                                   'selection_end': 737,
                                   'selection_start': 737}),
                                 (loc('Pong_Local/MAIN.py'),
+=======
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                                  {'attrib-starts': [],
                                   'first-line': 16,
                                   'folded-linenos': [],
+<<<<<<< HEAD
+=======
+                                  'sel-line': 64,
+                                  'sel-line-start': 1481,
+                                  'selection_end': 1511,
+                                  'selection_start': 1511}),
+                                (loc('Pong_Local/event_handling.py'),
+                                 {'attrib-starts': [('Event_exe',
+        33),
+        ('Event_exe.__init__',
+         34)],
+                                  'first-line': 1,
+                                  'folded-linenos': [],
+                                  'sel-line': 34,
+                                  'sel-line-start': 665,
+                                  'selection_end': 737,
+                                  'selection_start': 737}),
+                                (loc('Pong_Local/MAIN.py'),
+                                 {'attrib-starts': [],
+                                  'first-line': 16,
+                                  'folded-linenos': [],
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
                                   'sel-line': 35,
                                   'sel-line-start': 785,
                                   'selection_end': 819,
@@ -1526,6 +1997,9 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
           'has-focus': True,
           'locked': False},
          [loc('Pong_Local/constants.py'),
+<<<<<<< HEAD
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
+=======
 >>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
           loc('Pong_Local/event_handling.py'),
           loc('Pong_Local/MAIN.py'),
@@ -1536,6 +2010,9 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
         u'Pong_Local/constants.py',
 =======
                                'open_files': [u'Pong_Local/constants.py',
+<<<<<<< HEAD
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
+=======
 >>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
         u'Pong_Local/event_handling.py',
         u'Pong_Local/player_class.py',
@@ -1559,9 +2036,13 @@ guimgr.overall-gui-state = {'windowing-policy': 'combined-window',
 guimgr.recent-documents = [loc('Pong_Local/MAIN.py'),
                            loc('Pong_Local/player_class.py'),
 <<<<<<< HEAD
+<<<<<<< HEAD
                            loc('Pong_Local/puck_class.py'),
                            loc('Pong_Local/event_handling.py'),
                            loc('Pong_Local/class_test.py'),
+=======
+                           loc('Pong_Local/event_handling.py'),
+>>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
 =======
                            loc('Pong_Local/event_handling.py'),
 >>>>>>> parent of e7254cc... trying to get the paddle to reflect correctly.
