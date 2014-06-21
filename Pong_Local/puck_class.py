@@ -21,8 +21,7 @@ class Puck(pygame.sprite.Sprite):
     
     def __init__(self, list):
         
-        self.p_list = list
-        self.passed = False
+
         # init position variables
         self.choices = [PUCK_SPEED, -1*PUCK_SPEED]
         self.change_x = choice(self.choices)
@@ -47,15 +46,6 @@ class Puck(pygame.sprite.Sprite):
         self.change_y = randint(-1*PUCK_SPEED, PUCK_SPEED)
         print('reset')
     
-    def reverse_x(self, buff = 0):
-        self.change_x *= -1
-        self.rect.x += buff
-        self.passed = False
-        
-    def reverse_y(self, buff = 0):
-        self.change_y *= -1
-        self.rect.y += buff
-        self.passed = False
   
     # Define movement methods:
     def changespeed(self, x, y):
@@ -64,11 +54,7 @@ class Puck(pygame.sprite.Sprite):
     
     
     def move(self):
-        
-        # move
-        self.rect.x += self.change_x
-        self.rect.y += self.change_y
-        
+               
         # bounce off of top/bottom of screen
         if self.rect.bottom > SCREEN_HEIGHT:
             self.change_y *= -1
@@ -80,57 +66,17 @@ class Puck(pygame.sprite.Sprite):
         if self.rect.x <-600 or self.rect.x>(SCREEN_WIDTH+600):
             self.reset()
             
-            
-        # Collision check:
-        puck_hit_player = pygame.sprite.spritecollide(self, player_list, False)
+        # move
+        self.rect.y += self.change_y
         
+        puck_hit_player = pygame.sprite.spritecollide(self, player_list, False)
         if puck_hit_player:
-            # check
-            for player in puck_hit_player:
-                if self.passed:
-                    self.reverse_y()
-                
-                else:
-                    if player.rect.x > SCREEN_WIDTH/2:
-                        pad = player.rect.left - self.rect.right
-                    else:
-                        pad = player.rect.right - self.rect.left
-                    self.reverse_x(pad)
-                    print(pad)
-                    
-                # add spin:
-                if player.change_y > 0:
-                    if self.change_y > 0:
-                        self.change_y += SPIN_SPEED
-                        self.change_x += SPIN_SPEED/2
-                    elif self.change_y < 0:
-                        self.change_y -= DRAG_SPEED
-                        self.change_y -= DRAG_SPEED/2
-                if player.change_y < 0:
-                    if self.change_y < 0:
-                        self.change_y -= SPIN_SPEED
-                        self.change_x -= SPIN_SPEED/2
-                    elif self.change_y > 0:
-                        self.change_y += DRAG_SPEED
-                        self.change_y += DRAG_SPEED/2
-                
-                if self.change_y < PUCK_SPEED:
-                    self.change_y = PUCK_SPEED
-                if self.change_x < PUCK_SPEED:
-                    self.change_x = PUCK_SPEED
-                    
-                    
-        # check to see if puck will 
-        # bounce of top/bottom of player
-        # only runs if no collides
-        else:
-            # if puck is going right:
-            if self.change_x > 0:
-                # see if passed right player:
-                if self.rect.right >= p_list[0].rect.left:
-                    self.passed = True
-            # same if puck is going left:
-            elif self.change_x < 0:
-                if self.rect.left <= p_list[1].rect.right:
-                    self.passed = True
-            else: self.passed = False
+            self.change_y *= -1
+            self.rect.y += self.change_y
+        
+        self.rect.x += self.change_x
+        
+        puck_hit_player = pygame.sprite.spritecollide(self, player_list, False)
+        if puck_hit_player:
+            self.change_x *= -1
+            self.rect.x += self.change_x
