@@ -11,6 +11,7 @@ import pygame
 from pygame.locals import *
 import random, sys
 
+
 # Import custom libraries:
 from constants import *
 from player_class import *
@@ -26,9 +27,11 @@ pygame.display.set_caption('Pong LOCAL (Pre-alpha)')
 screen = pygame.display.set_mode(SCREEN_SIZE)
 
 # --- create game objects ---
-player_1 = Player(SCREEN_WIDTH - (50+PLAYER_WIDTH), player2_image) 
+player_1 = Player(SCREEN_WIDTH - (50+PLAYER_WIDTH), player2_image)
+p_list.append(player_1)
 player_2 = Player(50, player1_image)
-puck = Puck()
+p_list.append(player_2)
+puck = Puck(p_list)
 
 # ---create event exe's---
 

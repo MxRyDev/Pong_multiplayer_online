@@ -15,6 +15,7 @@ screen = pygame.display.set_mode([10,10])
 # lists:
 all_sprites_list = pygame.sprite.Group()
 player_list      = pygame.sprite.Group()
+p_list = [] # list for custom hit detection
 puck_list        = pygame.sprite.Group()
 
 # colors:
@@ -41,7 +42,9 @@ PLAYER_SPEED = 15
 
 PUCK_HEIGHT = 30
 PUCK_WIDTH = 30
-PUCK_SPEED = 7
+PUCK_SPEED = 5
+SPIN_SPEED = 3
+DRAG_SPEED = 6
                    
                        
 
