@@ -38,13 +38,11 @@ SCREEN_SIZE = ([SCREEN_WIDTH, SCREEN_HEIGHT])
 # they should be updated if images are changed
 PLAYER_HEIGHT = 200 
 PLAYER_WIDTH = 50
-PLAYER_SPEED = 15
+PLAYER_SPEED = 17
 
 PUCK_HEIGHT = 30
 PUCK_WIDTH = 30
-PUCK_SPEED = 7
-SPIN_SPEED = 3
-DRAG_SPEED = 6
+PUCK_SPEED = 8
                    
                        
 

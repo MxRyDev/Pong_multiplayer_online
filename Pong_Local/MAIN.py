@@ -1,8 +1,8 @@
 # Need to add:
 '''
--Hit Detection
+
 -Scoring
--"Spin" on the ball if paddle was moving at impact
+
 '''
 
 
