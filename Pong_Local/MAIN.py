@@ -25,6 +25,8 @@ pygame.init()
 clock = pygame.time.Clock()
 pygame.display.set_caption('Pong LOCAL (Pre-alpha)')
 screen = pygame.display.set_mode(SCREEN_SIZE)
+pygame.display.toggle_fullscreen()
+font = pygame.font.Font(None, 90)
 
 # --- create game objects ---
 player_1 = Player(SCREEN_WIDTH - (50+PLAYER_WIDTH), player2_image)
@@ -77,6 +79,12 @@ while not done:
     # updates/draws sprites
     all_sprites_list.update()
     all_sprites_list.draw(screen)
+    
+    # draws score:
+    p1_score = font.render(str(player_1.score), 1, (GREEN))
+    p2_score = font.render(str(player_2.score), 1, (BLUE))
+    screen.blit(p1_score, (SCREEN_WIDTH - (SCORE_PAD + 35), 0))
+    screen.blit(p2_score, (SCORE_PAD, 0))
     
 
     # flips the display:

@@ -21,11 +21,11 @@ class Puck(pygame.sprite.Sprite):
     
     def __init__(self, list):
         
-
+        self.p_list = list
         # init position variables
         self.choices = [PUCK_SPEED, -1*PUCK_SPEED]
-        self.change_x = choice(self.choices)
-        self.change_y = choice(self.choices)
+        self.change_x, self.change_y = 0,0
+        
         # inherited class init
         pygame.sprite.Sprite.__init__(self)
         
@@ -43,9 +43,7 @@ class Puck(pygame.sprite.Sprite):
         self.rect.x = (SCREEN_WIDTH/2 - PUCK_WIDTH/2)
         self.rect.y = (SCREEN_HEIGHT/2 - PUCK_HEIGHT/2)
         self.change_x = choice(self.choices)
-        self.change_y = randint(-1*PUCK_SPEED, PUCK_SPEED)
-        print('reset')
-    
+        self.change_y = randint(-1*PUCK_SPEED, PUCK_SPEED)    
   
     # Define movement methods:
     def changespeed(self, x, y):
@@ -63,8 +61,12 @@ class Puck(pygame.sprite.Sprite):
             
         # reset when travels off screen on x axis
         # (update this when scoring & better reset are implemented)
-        if self.rect.x <-600 or self.rect.x>(SCREEN_WIDTH+600):
+        if self.rect.x <-600:
             self.reset()
+            self.p_list[0].score += 1
+        elif self.rect.x>(SCREEN_WIDTH+600):
+            self.reset()
+            self.p_list[1].score += 1
             
         # HIT DETECTION:
         self.rect.y += self.change_y # move up/down

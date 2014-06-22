@@ -22,15 +22,16 @@ puck_list        = pygame.sprite.Group()
 BLACK = (0,0,0)
 WHITE = (255,255,255)
 RED = (255,0,0)
-GREEN = (0,255,0)
+GREEN = (44,179,44)
 BLUE = (0,0,255)
     
 # ------- 'tweakable' consants -------
     
 # screen setup
-SCREEN_WIDTH = 1199  #width and height match bg image below
-SCREEN_HEIGHT = 700
+SCREEN_WIDTH = 1400  #width and height match bg image below
+SCREEN_HEIGHT = 750
 SCREEN_SIZE = ([SCREEN_WIDTH, SCREEN_HEIGHT])
+SCORE_PAD = 20
     
 
 # game elements:
