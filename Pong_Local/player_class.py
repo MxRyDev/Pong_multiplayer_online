@@ -57,3 +57,18 @@ class Player(pygame.sprite.Sprite):
             self.rect.bottom = SCREEN_HEIGHT
         if self.rect.top < 0:
             self.rect.top = 0
+            
+        # handle running into puck with paddle:
+        player_hit_puck = pygame.sprite.spritecollide(self, puck_list, False)
+        for puck in player_hit_puck:
+            if self.change_y > 0: # if player was going down:
+                puck.change_y = (PLAYER_SPEED + 1)
+                # keep from pinning:
+                if self.rect.bottom >= SCREEN_HEIGHT - PUCK_HEIGHT:
+                    self.rect.bottom = SCREEN_HEIGHT - PUCK_HEIGHT
+            elif self.change_y < 0: # if player was going up:
+                puck.change_y = -(PLAYER_SPEED + 1)
+                if self.rect.top <= PUCK_HEIGHT:
+                    self.rect.top = PUCK_HEIGHT
+            
+                

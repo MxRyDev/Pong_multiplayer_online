@@ -66,17 +66,40 @@ class Puck(pygame.sprite.Sprite):
         if self.rect.x <-600 or self.rect.x>(SCREEN_WIDTH+600):
             self.reset()
             
-        # move
-        self.rect.y += self.change_y
+        # HIT DETECTION:
+        self.rect.y += self.change_y # move up/down
         
+        # check for collisions:
         puck_hit_player = pygame.sprite.spritecollide(self, player_list, False)
         if puck_hit_player:
             self.change_y *= -1
             self.rect.y += self.change_y
         
-        self.rect.x += self.change_x
+        self.rect.x += self.change_x # move left/right
         
+        #check for collisions:
         puck_hit_player = pygame.sprite.spritecollide(self, player_list, False)
         if puck_hit_player:
             self.change_x *= -1
             self.rect.x += self.change_x
+        for player in puck_hit_player:
+            
+            if player.change_y > 0: #if player was moving down:
+               
+                if self.change_y > 0: # if ball was moving down too
+                    self.change_y *= 1.25
+                    self.change_x*= .9
+                else: 
+                    self.change_y *= .9 # if the ball was going the other way, apply drag
+                    self.change_x *= 1.25
+                    
+            elif player.change_y < 0:
+                
+                if self.change_y < 0:
+                    self.change_y *= 1.25
+                    self.change_x *= .9
+                    
+                else: 
+                    self.change_y *= .9
+                    self.change_x *= 1.25
+                
