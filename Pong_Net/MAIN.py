@@ -63,11 +63,11 @@ event_conductor = Event_conductor(al)
 # _________________________----- Main Loop -----_________________________________ #
 done = False
 
+while True:
+    if remote_player.x == 'go': break
+
 # --- event handling ---
 while not done:
-    while True:
-        if remote_player.x == 'go':
-            break
     
     # --- handle events ---
     event_conductor.handle_events(pygame.event.get(), pygame.mouse.get_pressed())
