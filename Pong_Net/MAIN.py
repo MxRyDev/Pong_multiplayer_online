@@ -39,6 +39,7 @@ puck = Puck(p_list)
 remote_player = Remote_player()
 
 
+
 # ---create event exe's---
 
 # create list that all actions will be added to
@@ -64,6 +65,9 @@ done = False
 
 # --- event handling ---
 while not done:
+    while True:
+        if remote_player.x == 'go':
+            break
     
     # --- handle events ---
     event_conductor.handle_events(pygame.event.get(), pygame.mouse.get_pressed())
