@@ -24,7 +24,11 @@ class Remote_player():
             data = s.recv(1024)
             XandY = pickle.loads(data)
             self.x, self.y = XandY[0], XandY[1]
+<<<<<<< HEAD
     # grab 2 item list and update self.x and self.y constantly
+=======
+        # grab 2 item list and update self.x and self.y constantly
+>>>>>>> FETCH_HEAD
     
     def speak(self, posX, posY):
         local_pos = [posX, posY]
