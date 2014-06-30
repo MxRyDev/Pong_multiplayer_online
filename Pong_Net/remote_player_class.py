@@ -20,10 +20,11 @@ class Remote_player():
         listen_thread.start()
         
     def listen(self):
-        data = s.recv(1024)
-        XandY = pickle.loads(data)
-        self.x, self.y = XandY[0], XandY[1]
-    # grab 2 item list and update self.x and self.y constantly
+        while True:
+            data = s.recv(1024)
+            XandY = pickle.loads(data)
+            self.x, self.y = XandY[0], XandY[1]
+        # grab 2 item list and update self.x and self.y constantly
     
     def speak(self, posX, posY):
         local_pos = [posX, posY]

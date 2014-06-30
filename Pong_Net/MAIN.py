@@ -84,6 +84,7 @@ while not done:
     all_sprites_list.update()
     remote_player.speak(player_1.rect.x, player_1.rect.y)
     player_2.rect.y = remote_player.y
+
     
     
     all_sprites_list.draw(screen)
