@@ -20,7 +20,6 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, startx, image, player_speed = PLAYER_SPEED):
         
         self.score = 0
-        # init position variables
         self.change_x = 0
         self.change_y = 0
         self.speed = PLAYER_SPEED
