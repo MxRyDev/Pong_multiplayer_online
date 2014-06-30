@@ -17,9 +17,7 @@ class Remote_player():
         self.send_data = []
         
         listen_thread = Thread(target = self.listen)
-        speak_thread = Thread(target = self.speak)
         listen_thread.start()
-        speak_thread.start()
         
     def listen(self):
         data = s.recv(1024)
