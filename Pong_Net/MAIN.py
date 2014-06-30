@@ -39,7 +39,6 @@ puck = Puck(p_list)
 remote_player = Remote_player()
 
 
-
 # ---create event exe's---
 
 # create list that all actions will be added to
@@ -62,9 +61,6 @@ event_conductor = Event_conductor(al)
 #`````````````````````````````````````````````````````````````````````````````````#
 # _________________________----- Main Loop -----_________________________________ #
 done = False
-
-while True:
-    if remote_player.x == 'go': break
 
 # --- event handling ---
 while not done:

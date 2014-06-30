@@ -1,5 +1,5 @@
 from threading import Thread
-import socket, pickle,
+import socket, pickle
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(("0.0.0.0", 12354))
@@ -14,8 +14,11 @@ class Client():
         # add to global clients list
         client_list.append(self)
         # create thread
-        self.client_thread = Thread(target = self.process_messages)
-        
+        client_thread = Thread(target = self.process_messages)
+        client_thread.start()
+        data = [1,2,3,'shoe', 'teeth']
+        data = pickle.dumps(data)
+        self.conn.sendall(data)
         
         
     def process_messages(self):
@@ -42,14 +45,6 @@ def connection_manager():
         print (client_list)
     print ("Max clients reached")
     print ("No longer listening..")
-    data = (['go', 'go'])
-    data = pickle.dumps(data)
-    s.sendall(data)
-    print('beginning game')
-    for client in client_list:
-        self.client_thread.start()
-    print('started client threads and sent "go" message')
-    
 
 accept_connections_thread = Thread(target = connection_manager)
 accept_connections_thread.start()
