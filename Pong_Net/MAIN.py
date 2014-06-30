@@ -66,7 +66,7 @@ done = False
 while not done:
     
     # --- handle events ---
-    event_conductor.handle_events(pygame.event.get())
+    event_conductor.handle_events(pygame.event.get(), pygame.mouse.get_pressed())
     
 
     # --- move objects ---
