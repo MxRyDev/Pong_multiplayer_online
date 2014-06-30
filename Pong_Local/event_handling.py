@@ -1,6 +1,6 @@
 # Defines the custom library to aide with event handling in pygame.
 
-import pygame
+import pygame, sys
 
 if __name__ == '__main__':
     print('''
@@ -49,12 +49,26 @@ class Event_exe():
 class Event_conductor():
     def __init__(self, actions_list):
         self.actions_list = actions_list
+        self.quit = False
+        self.LMB = False
+        self.MMB = False
+        self.RMB= False
         
-    def handle_events(self, events_list):
+    def handle_events(self, events_list, mouse_state):
+        self.mouse_state = mouse_state
+        
+        
         for event in events_list:
             for action in self.actions_list:
+                
+                
+                # if the event is QUIT:
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    sys.exit()
+                
                 # if the event is keyup or keydown...
-                if event.type in [pygame.KEYDOWN, pygame.KEYUP]:
+                elif event.type in [pygame.KEYDOWN, pygame.KEYUP]:
                     # and if it is a keypress we are looking for...
                     if event.key == action.event:
                         if event.type == pygame.KEYDOWN:
@@ -62,6 +76,39 @@ class Event_conductor():
                             
                         elif event.type == pygame.KEYUP:
                             action.released()
+                            
+                # handle mouse events:
+                
+                # left mouse button
+                elif action.event == 'LMB':
+                    if self.mouse_state[0] and self.LMB == False:
+                        action.pressed()
+                        self.LMB = True
+                    if self.LMB:
+                        if not self.mouse_state[0]:
+                            action.released()
+                            self.LMB = False
+                        
+                # middle mouse button
+                elif action.event == 'MMB':
+                    if self.mouse_state[1] and self.MMB == False:
+                        action.pressed()
+                        self.MMB = True
+                    if self.MMB:
+                        if not self.mouse_state[1]:
+                            action.released()
+                            self.MMB = False
+            
+                # right mouse button
+                elif action.event == 'RMB':
+                    if self.mouse_state[2] and self.RMB == False:
+                        action.pressed()
+                        self.RMB = True
+                    if self.RMB:
+                        if not self.mouse_state[2]:
+                            action.released()
+                            self.RMB= False
+        
                             
                                 
                                 
