@@ -20,12 +20,15 @@ class Remote_player():
         listen_thread.start()
         
     def listen(self):
+<<<<<<< HEAD
         while True:
             data = s.recv(1024)
             if data:
                 XandY = pickle.loads(data)
                 self.x, self.y = XandY[0], XandY[1]
                 
+=======
+>>>>>>> parent of 92c1731... fixed
         data = s.recv(1024)
         XandY = pickle.loads(data)
         self.x, self.y = XandY[0], XandY[1]
