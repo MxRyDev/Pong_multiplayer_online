@@ -6,6 +6,9 @@ s.bind(("0.0.0.0", 12354))
 
 client_list = []
 max_clients = 2
+started = 0
+global started
+
 
 class Client():
     def __init__(self, conn = ''):
@@ -15,6 +18,7 @@ class Client():
         client_list.append(self)
         # create thread
         self.client_thread = Thread(target = self.process_messages)
+        self.client_thread.start()
         
         
         
@@ -23,6 +27,7 @@ class Client():
             data = self.conn.recv(1024)
             # send to all in client_list except self
             data = pickle.loads(data)
+            data.append(started)
             print ("Sending Data: ", data)
             data = pickle.dumps(data)
             for client in client_list:
@@ -42,13 +47,8 @@ def connection_manager():
         print (client_list)
     print ("Max clients reached")
     print ("No longer listening..")
-    data = (['go', 'go'])
-    data = pickle.dumps(data)
-    s.sendall(data)
-    print('beginning game')
-    for client in client_list:
-        self.client_thread.start()
-    print('started client threads and sent "go" message')
+    started = 0
+
     
 
 accept_connections_thread = Thread(target = connection_manager)
