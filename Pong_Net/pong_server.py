@@ -1,5 +1,5 @@
 from threading import Thread
-import socket, pickle, time.sleep
+import socket, pickle
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(("0.0.0.0", 12354))
