@@ -24,7 +24,7 @@ class Puck(pygame.sprite.Sprite):
         self.p_list = list
         # init position variables
         self.choices = [PUCK_SPEED, -1*PUCK_SPEED]
-        self.change_x, self.change_y = 0,0
+        self.change_x, self.change_y = PUCK_SPEED, PUCK_SPEED/2
         
         # inherited class init
         pygame.sprite.Sprite.__init__(self)
@@ -42,8 +42,8 @@ class Puck(pygame.sprite.Sprite):
     def reset(self):
         self.rect.x = (SCREEN_WIDTH/2 - PUCK_WIDTH/2)
         self.rect.y = (SCREEN_HEIGHT/2 - PUCK_HEIGHT/2)
-        self.change_x = choice(self.choices)
-        self.change_y = randint(-1*PUCK_SPEED, PUCK_SPEED)    
+        self.change_x = (PUCK_SPEED)
+        self.change_y = (PUCK_SPEED/2)    
   
     # Define movement methods:
     def changespeed(self, x, y):
