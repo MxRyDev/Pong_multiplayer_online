@@ -17,6 +17,7 @@ from constants import *
 from player_class import *
 from puck_class import *
 from event_handling import *
+from remote_player_class import *
 
 # _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
 
@@ -34,6 +35,9 @@ p_list.append(player_1)
 player_2 = Player(50, player1_image)
 p_list.append(player_2)
 puck = Puck(p_list)
+
+remote_player = Remote_player()
+
 
 # ---create event exe's---
 
@@ -78,6 +82,10 @@ while not done:
     
     # updates/draws sprites
     all_sprites_list.update()
+    remote_player.speak(player_1.rect.x, player_1.rect.y)
+    player_2.rect.x, player_2.rect.y = remote_player.x, remote_player.y
+    
+    
     all_sprites_list.draw(screen)
     
     # draws score:
