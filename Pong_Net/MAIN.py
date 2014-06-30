@@ -63,6 +63,9 @@ event_conductor = Event_conductor(al)
 # _________________________----- Main Loop -----_________________________________ #
 done = False
 
+while True:
+    if remote_player.x == 'go': break
+
 # --- event handling ---
 while not done:
     
