@@ -34,8 +34,8 @@ class Client():
                 logging.info("Sending Data: {0}".format(data))
                 data = pickle.dumps(data)
                 for client in client_list:
-                    #if client != self:                                                                                                                                 
-                    client.conn.sendall(data)                                                                                                                           
+                    if client != self:                                                                                                                                 
+                        client.conn.sendall(data)                                                                                                                           
                 data = ""
             except ConnectionResetError:
                 logging.debug("Client Disconnected")
