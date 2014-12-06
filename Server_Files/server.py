@@ -14,15 +14,15 @@ max_clients = 2
 global started  
 started = 0                                                                                                                                                         
 
+
 class Client():
-    def __init__(self, conn = ''):
+    def __init__(self, conn=''):
 
         self.conn = conn
         # add to global clients list
         client_list.append(self)                             
-        self.client_thread = Thread(target = self.process_messages)
+        self.client_thread = Thread(target=self.process_messages)
         self.client_thread.start()
-
 
     def process_messages(self):                                                                                                                                     
         while True:
@@ -54,5 +54,5 @@ def connection_manager():
     logging.info("No longer listening..")
     started = 0
     
-accept_connections_thread = Thread(target = connection_manager)
+accept_connections_thread = Thread(target=connection_manager)
 accept_connections_thread.start()
